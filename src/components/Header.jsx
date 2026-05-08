@@ -10,8 +10,13 @@ export default function Header() {
                 <img src={banner} alt="Bannière" height="40" className="me-2" />
                         JOHN DOE
                 </NavLink>
+                <button className="#navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span className="navbar-toggle-icon"></span>
+                </button>
 
                 
+
+
 
             </div>
 
