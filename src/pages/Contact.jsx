@@ -28,7 +28,7 @@ export default function Contact() {
 
             <div className="col-md-6">
                 <h4 className="mb-4 mb-md-0">Coordonnées</h4>
-                <p>10 Rue Exemple, 75000 Paris</p>
+                <p>Adresse : Rue de l'Aigoual, 34130 Carnon,</p>
                 <p>Téléphone : 01 23 45 67 89</p>
                 <p>Email : john.doe@example.com</p>
 
