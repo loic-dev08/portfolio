@@ -11,10 +11,10 @@ export default function Router() {
     return (
         <Routes>
             <Route path="/" element={<Hero />} />
-            {/* <Route path="/services" element={<Services />} /> */}
-            {/* <Route path="/realisations" element={<Realisations />} /> */}
-            {/* <Route path="/contact" element={<Contact />} /> */}
-            {/* <Route path="/mentions-legales" element={<MentionsLegales />} /> */}
+            <Route path="/services" element={<Services />} />
+            <Route path="/realisations" element={<Realisations />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
         </Routes>
     );
 }
