@@ -5,7 +5,7 @@ export default function ModalGithub() {
     const [data, setData] = useState(null);
 
     useEffect(() => {
-        fetch("https://api.github.com/users/ton-username-ici")
+        fetch("https://api.github.com/users/github-johndoe")
             .then((res) => res.json())
             .then((json) => setData(json));
     }, []);
@@ -19,8 +19,10 @@ export default function ModalGithub() {
                     <img src={modalImg} alt="Illustration GitHub" className="img-fluid mb-3" />
                     <h3>{data.name}</h3>
                     <p>{data.bio}</p>
-                    <p>Repos publics : {data.public_repos}</p>
-                    <a href={data.html_url} target="_blank" rel="noreferrer">Voir sur GitHub</a>
+                    <p><strong>Repos publics : </strong>{data.public_repos}</p>
+                    <a href={data.html_url} target="_blank" rel="noreferrer" className="btn btn-primary">
+                        Voir sur GitHub
+                    </a>
                 </div>
             </div>
         </div>
