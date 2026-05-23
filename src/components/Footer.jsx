@@ -9,12 +9,13 @@ export default function Footer() {
             <div className="container">
                 <div className="row text-center text-md-start">
 
+                    {/* Colonne 1 — Infos contact */}
                     <div className="col-md-4 mb-3">
                         <h4>John Doe</h4>
-                        <p>10 Rue Exemple, Paris</p>
+                        <p>Rue de l'Aigoual, 34130 Carnon</p>
                         <p>01 23 45 67 89</p>
                         <p>Email : john.doe@example.com</p>
-                        <div className="d-flex gap-3 justify-content-center justify-content-md-start">
+                        <div className="d-flex gap-3 justify-content-center justify-content-md-start mt-3">
                             <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
                                 <img src={twitter} alt="Twitter" height="30" />
                             </a>
@@ -27,10 +28,10 @@ export default function Footer() {
                         </div>
                     </div>
 
+                    {/* Colonne 2 — Navigation */}
                     <div className="col-md-4 mb-3">
                         <h4>Navigation</h4>
                         <ul className="list-unstyled">
-                            {/* NavLink à la place du texte brut ✅ */}
                             <li><NavLink to="/" className="text-white text-decoration-none">Accueil</NavLink></li>
                             <li><NavLink to="/services" className="text-white text-decoration-none">Services</NavLink></li>
                             <li><NavLink to="/realisations" className="text-white text-decoration-none">Réalisations</NavLink></li>
@@ -38,12 +39,13 @@ export default function Footer() {
                         </ul>
                     </div>
 
+                    {/* Colonne 3 — Dernières réalisations */}
                     <div className="col-md-4 mb-3">
                         <h4>Dernières réalisations</h4>
                         <ul className="list-unstyled">
-                            <li>Restaurant Japonais</li>
-                            <li>Fresh Food Bio</li>
-                            <li>Espace Bien-être</li>
+                            <li><NavLink to="/realisations" className="text-white text-decoration-none">Restaurant Japonais</NavLink></li>
+                            <li><NavLink to="/realisations" className="text-white text-decoration-none">Fresh Food Bio</NavLink></li>
+                            <li><NavLink to="/realisations" className="text-white text-decoration-none">Espace Bien-être</NavLink></li>
                         </ul>
                     </div>
 
