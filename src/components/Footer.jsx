@@ -1,4 +1,3 @@
-Icônes: twitter-x.svg, linkedin.svg, github.svg
 import twitter from "../assets/images/twitter-x.svg";
 import linkedin from "../assets/images/linkedin.svg";
 import github from "../assets/images/github.svg";
@@ -8,46 +7,47 @@ export default function Footer() {
         <footer className="bg-dark text-white py-4 mt-5">
             <div className="container">
                 <div className="row text-center text-md-start">
-                    <div className="col-md-4">
+
+                    {/* Colonne 1 — Infos contact */}
+                    <div className="col-md-4 mb-3">
                         <h4>John Doe</h4>
                         <p>10 Rue Exemple, Paris</p>
                         <p>01 23 45 67 89</p>
-                        <p>Email: john.doe@example.com</p>
+                        <p>Email : john.doe@example.com</p>
+                        <div className="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <img src={twitter} alt="Twitter" height="30" className="icon-footer" />
+                            </a>
+                            <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <img src={linkedin} alt="LinkedIn" height="30" className="icon-footer" />
+                            </a>
+                            <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
+                                <img src={github} alt="GitHub" height="30" className="icon-footer" />
+                            </a>
+                        </div>
                     </div>
-                    <div className="d-flex gap-3">
-                        <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <img src={twitter} alt="Twitter" height="30" className="icon-footer" />
-                        </a>
-                    </div>
-                    <div className="col-md-4">
-                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <img src={linkedin} alt="LinkedIn" height="30" className="icon-footer" />
-                        </a>
-                    </div>
-                    <div className="col-md-4">
-                        <a href="https://github.com/yourprofile" target="_blank" rel="noopener noreferrer">
-                            <img src={github} alt="GitHub" height="30" className="icon-footer" />
-                        </a>
-                    </div>
-                </div>
 
-                <div className="col-md-4">
-                    <h4>Navigation</h4>
-                    <ul className="list-unstyled">
-                        <li>Accueil</li>
-                        <li>Services</li>
-                        <li>Réalisations</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
+                    {/* Colonne 2 — Navigation */}
+                    <div className="col-md-4 mb-3">
+                        <h4>Navigation</h4>
+                        <ul className="list-unstyled">
+                            <li>Accueil</li>
+                            <li>Services</li>
+                            <li>Réalisations</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
 
-                <div className="col-md-4">
-                    <h4>Dernières réalisations</h4>
-                    <ul className="list-unstyled">
-                        <li>Restaurant Japonais</li>
-                        <li>Fresf Food Bio</li>
-                        <li>Espace Bien-être</li>
-                    </ul>
+                    {/* Colonne 3 — Dernières réalisations */}
+                    <div className="col-md-4 mb-3">
+                        <h4>Dernières réalisations</h4>
+                        <ul className="list-unstyled">
+                            <li>Restaurant Japonais</li>
+                            <li>Fresh Food Bio</li>
+                            <li>Espace Bien-être</li>
+                        </ul>
+                    </div>
+
                 </div>
             </div>
         </footer>
