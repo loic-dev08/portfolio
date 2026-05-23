@@ -1,3 +1,4 @@
+Icônes: twitter-x.svg, linkedin.svg, github.svg
 import twitter from "../assets/images/twitter.png";
 import linkedin from "../assets/images/linkedin.png";
 import github from "../assets/images/github.png";
@@ -9,9 +10,9 @@ export default function Footer() {
                 <div className="row text-center text-md-start">
                     <div className="col-md-4">
                         <h4>John Doe</h4>
-                        <p>Adresse....</p>
-                        <p>Téléphone...</p>
-                        <p>Email...</p>
+                        <p>10 Rue Exemple, Paris</p>
+                        <p>01 23 45 67 89</p>
+                        <p>Email: john.doe@example.com</p>
                     </div>
                     <div className="d-flex gap-3">
                         <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
@@ -31,21 +32,21 @@ export default function Footer() {
                 </div>
 
                 <div className="col-md-4">
-                    <h4>Pages</h4>
-                    <ul>
-                        <li><a href="/">Accueil</a></li>
-                        <li><a href="/services">Services</a></li>
-                        <li><a href="/realisations">Réalisations</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                    <h4>Navigation</h4>
+                    <ul className="list-unstyled">
+                        <li>Accueil</li>
+                        <li>Services</li>
+                        <li>Réalisations</li>
+                        <li>Contact</li>
                     </ul>
                 </div>
 
                 <div className="col-md-4">
                     <h4>Dernières réalisations</h4>
-                    <ul>
-                        <li><a href="/realisations">Projet 1</a></li>
-                        <li><a href="/realisations">Projet 2</a></li>
-                        <li><a href="/realisations">Projet 3</a></li>
+                    <ul className="list-unstyled">
+                        <li>Restaurant Japonais</li>
+                        <li>Fresf Food Bio</li>
+                        <li>Espace Bien-être</li>
                     </ul>
                 </div>
             </div>
