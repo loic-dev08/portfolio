@@ -15,7 +15,7 @@ export default function Header() {
                 </button>
 
                 <nav id="navbarNav" className="collapse navbar-collapse justify-content-end">
-                    <ul className="navbar-nav text-uppercase">
+                    <ul className="navbar-nav text-uppercase gap-3">
                         <li><NavLink to="/">Accueil</NavLink></li>
                         <li><NavLink to="/services">Services</NavLink></li>
                         <li><NavLink to="/realisations">Réalisations</NavLink></li>
