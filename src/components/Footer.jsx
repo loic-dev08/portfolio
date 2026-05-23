@@ -1,7 +1,7 @@
 Icônes: twitter-x.svg, linkedin.svg, github.svg
-import twitter from "../assets/images/twitter.png";
-import linkedin from "../assets/images/linkedin.png";
-import github from "../assets/images/github.png";
+import twitter from "../assets/images/twitter-x.svg";
+import linkedin from "../assets/images/linkedin.svg";
+import github from "../assets/images/github.svg";
 
 export default function Footer() {
     return (
